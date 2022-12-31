@@ -15,7 +15,7 @@ class ModelUser extends CI_Model
 
     public function getUserWhere($where = null)
     {
-        return $this->db->get_where('user',$where);
+        return $this->db->get_where('user', $where);
     }
 
     public function cekUserAccess($where = null)
@@ -33,4 +33,5 @@ class ModelUser extends CI_Model
         $this->db->limit(10, 0);
         return $this->db->get();
     }
+
 }
